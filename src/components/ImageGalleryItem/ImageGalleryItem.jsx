@@ -16,11 +16,11 @@ export default function ImageGalleryItem({ image, openModal }) {
 }
 
 ImageGalleryItem.propTypes = {
-  image: PropTypes.arrayOf(PropTypes.shape({
+  image: PropTypes.shape({
     webformatURL: PropTypes.string.isRequired,
     largeImageURL: PropTypes.string.isRequired,
     tags: PropTypes.string.isRequired,
-  })
+  }
  ).isRequired,
   openModal: PropTypes.func.isRequired,
 };
